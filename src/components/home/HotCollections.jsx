@@ -32,7 +32,7 @@ const HotCollections = () => {
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
-          {data.map((collection)) => (
+          {data.map((collection) => (
             <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12" key={collection.id}>
               <div className="nft_coll">
                 <div className="nft_wrap">
@@ -54,7 +54,7 @@ const HotCollections = () => {
                 </div>
               </div>
             </div>
-          )}
+          ))}
         </div>
       </div>
     </section>
