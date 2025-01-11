@@ -32,8 +32,8 @@ const HotCollections = () => {
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
-          {new Array(4).fill(0).map((_, index) => (
-            <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12" key={index}>
+          {data.map((collection)) => (
+            <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12" key={collection.id}>
               <div className="nft_coll">
                 <div className="nft_wrap">
                   <Link to={`/item-details/${collection.nftId}`}>
@@ -54,7 +54,7 @@ const HotCollections = () => {
                 </div>
               </div>
             </div>
-          ))}
+          )}
         </div>
       </div>
     </section>
